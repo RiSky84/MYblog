@@ -1,0 +1,14 @@
+desktop.ini
+*.log
+.tools/
+3d-portfolio/
+3d-portfolio.zip
+Hydra.webp
+O sajni.mp3
+Zubeen.mp3
+style_old.css
+style_old_professional.css
+3d-portfolio/node_modules/
+3d-portfolio/dist/
+3d-portfolio/.vercel/
+3d-portfolio/.vite/

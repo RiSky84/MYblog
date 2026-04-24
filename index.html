@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riky Rabha - Developer & Musician</title>
+    <meta name="description" content="Creative Developer & Musician building innovative digital experiences">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Riky Rabha</a>
+            </div>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="https://discord.gg/QS6vu32spy" target="_blank" class="nav-cta">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Wheel Navigation -->
+    <button class="wheel-nav-toggle" id="wheel-nav-toggle" type="button" aria-controls="wheel-nav" aria-expanded="false" aria-label="Open quick navigation">
+        &#10022;
+    </button>
+    <div class="wheel-nav" id="wheel-nav">
+        <a href="#home" class="wheel-item" style="--index: 0;" title="Home">
+            <span class="wheel-icon">&#8962;</span>
+            <span class="wheel-label">Home</span>
+        </a>
+        <a href="#work" class="wheel-item" style="--index: 1;" title="Work">
+            <span class="wheel-icon">&#128188;</span>
+            <span class="wheel-label">Work</span>
+        </a>
+        <a href="#about" class="wheel-item" style="--index: 2;" title="About">
+            <span class="wheel-icon">&#128100;</span>
+            <span class="wheel-label">About</span>
+        </a>
+        <a href="#achievements" class="wheel-item" style="--index: 3;" title="Achievements">
+            <span class="wheel-icon">&#127942;</span>
+            <span class="wheel-label">Achievements</span>
+        </a>
+        <a href="#skills" class="wheel-item" style="--index: 4;" title="Skills">
+            <span class="wheel-icon">&#9889;</span>
+            <span class="wheel-label">Skills</span>
+        </a>
+        <a href="#contact" class="wheel-item" style="--index: 5;" title="Contact">
+            <span class="wheel-icon">&#9993;</span>
+            <span class="wheel-label">Contact</span>
+        </a>
+    </div>
+
+    <audio id="background-music" loop preload="metadata">
+        <source src="Jane doe.mp3" type="audio/mpeg">
+    </audio>
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">
+        Music Off
+    </button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-kicker">Socho</p>
+                <h1 class="hero-title">Developer & Musician</h1>
+                <p class="hero-subtitle">Building innovative digital experiences that blend creativity with code</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Start a Project</a>
+                    <a href="#work" class="cta-link">See My Work →</a>
+                </div>
+                <p class="hero-note">Use the shortcut wheel to jump through every major section like a pie-menu dial.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-preview-frame">
+                    <img src="Hydra 2.webp" alt="Hydra artwork" class="hero-preview-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio/Work Section -->
+    <section id="work" class="work">
+        <div class="work-container">
+            <div class="section-header">
+                <h2>Featured Work</h2>
+                <p>Projects showcasing creativity and technical excellence</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-showcase" data-animate>
+                    <div class="project-thumbnail project-thumbnail--video">
+                        <video class="project-media" autoplay muted loop playsinline preload="metadata">
+                            <source src="pc setup 123.mp4" type="video/mp4">
+                        </video>
+                        <span class="project-number">01</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Experience</h3>
+                        <p>Modern web applications with React, JavaScript, and responsive design</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="https://github.com/RiSky84" target="_blank" class="project-view">View Work →</a>
+                    </div>
+                </div>
+                <div class="project-showcase" data-animate>
+                    <div class="project-thumbnail project-thumbnail--video">
+                        <video class="project-media" autoplay muted loop playsinline preload="metadata">
+                            <source src="Music setup .mp4" type="video/mp4">
+                        </video>
+                        <span class="project-number">02</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Music Production</h3>
+                        <p>Original compositions and creative musical productions</p>
+                        <div class="tech-tags">
+                            <span>Composition</span>
+                            <span>Production</span>
+                            <span>Performance</span>
+                        </div>
+                        <a href="https://open.spotify.com/artist/7Jh6U4yVUKg5FyEYOGv76l?si=GXcXeyUISfqF9Nifxlx9_w" target="_blank" class="project-view">Listen on Spotify →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Creative Developer with a passion for music and innovation</p>
+                </div>
+                <div class="about-text">
+                    <p>I'm Riky Rabha, a BCA student and creative developer passionate about building meaningful digital experiences. By day, I craft elegant code; by night, I create music. This intersection of logic and creativity defines my approach to every project.</p>
+                    <p>My journey spans multiple disciplines: <strong>web development</strong>, <strong>systems programming</strong>, <strong>music production</strong>, and <strong>interactive design</strong>. I believe that the best solutions come from combining technical excellence with creative thinking.</p>
+                    <p>When I'm not coding or making music, you'll find me exploring new technologies, collaborating with other creators, or contributing to the developer community.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="My pic.jpeg" alt="Riky Rabha">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p>Technical proficiencies and creative capabilities</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-animate>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>C & C++</li>
+                        <li>JavaScript / ES6+</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-animate>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Responsive Design</li>
+                        <li>Web Performance</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-animate>
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Node.js</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-animate>
+                    <h3>Database & Backend</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQL</li>
+                        <li>Server Management</li>
+                        <li>API Development</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-animate>
+                    <h3>Data Structures</h3>
+                    <ul>
+                        <li>Arrays & Lists</li>
+                        <li>Trees & Graphs</li>
+                        <li>Sorting & Searching</li>
+                        <li>Dynamic Programming</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-animate>
+                    <h3>Music & Audio</h3>
+                    <ul>
+                        <li>Guitar & Piano</li>
+                        <li>Classical Vocals</li>
+                        <li>Production</li>
+                        <li>Composition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="achievements-container">
+            <div class="section-header">
+                <h2>Achievements & Recognition</h2>
+                <p>Milestones and accomplishments in my tech and creative journey</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-animate>
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-content">
+                        <h3>Top 10 Finalist – TechSprint</h3>
+                        <p>Selected as one of the top 10 finalists in a competitive hackathon, showcasing innovative technical solutions and problem-solving abilities.</p>
+                    </div>
+                </div>
+                <div class="achievement-card" data-animate>
+                    <div class="achievement-icon">🚀</div>
+                    <div class="achievement-content">
+                        <h3>Google Developer Groups On Campus</h3>
+                        <p>Active member and contributor to RGIPT campus developer community, fostering technical growth and knowledge sharing among peers.</p>
+                        <a href="GDG Achievement.pdf" target="_blank" class="achievement-link">📄 View Certificate</a>
+                    </div>
+                </div>
+                <div class="achievement-card" data-animate>
+                    <div class="achievement-icon">👥</div>
+                    <div class="achievement-content">
+                        <h3>Team Leader – "Team Syntax Error"</h3>
+                        <p>Recognized for outstanding innovation and technical excellence as team leader, driving team success through strategic planning and collaborative problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <h3>Riky's Assistant</h3>
+            <button class="chat-close" id="chat-close">✕</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message assistant-message">
+                <p>Hey there! I'm Riky's AI assistant. How can I help you today? Feel free to ask about projects, skills, or anything else! 👋</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Ask me something..." class="chat-field">
+            <button class="chat-send" id="chat-send">➤</button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button id="chat-toggle" class="chat-toggle">
+        <span class="chat-icon">💬</span>
+    </button>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind? Let's create something amazing</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <p>rikyrabha@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <p>+91 6000575375</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <p>Guwahati, India</p>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://discord.gg/QS6vu32spy" target="_blank">Discord</a>
+                        <a href="https://github.com/RiSky84" target="_blank">GitHub</a>
+                        <a href="https://www.youtube.com/@riky_r1" target="_blank">YouTube</a>
+                        <a href="https://www.instagram.com/rikyrabha" target="_blank">Instagram</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; Riky Rabha. Building cool stuff on the internet.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
